@@ -1,0 +1,77 @@
+{
+  "id": "/?source=pwa",
+  "name": "Money Mage | Premium Finance",
+  "short_name": "MoneyMage",
+  "description": "Your personal wealth manager. Track expenses, set budgets, and achieve financial goals with elegance.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "categories": ["finance", "productivity", "utilities", "business"],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw",
+      "sizes": "1360x1020",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw",
+      "sizes": "1360x1020",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw",
+      "sizes": "1360x1020",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Money Mage Financial Dashboard"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw",
+      "sizes": "1360x1020",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Track your expenses on the go"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Record Expense",
+      "short_name": "Add Expense",
+      "description": "Quickly record a new money out entry",
+      "url": "/index.html?action=expense",
+      "icons": [{"src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw", "sizes": "1360x1020"}]
+    },
+    {
+      "name": "Record Income",
+      "short_name": "Add Income",
+      "description": "Quickly record a new money in entry",
+      "url": "/index.html?action=income",
+      "icons": [{"src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw", "sizes": "1360x1020"}]
+    },
+    {
+      "name": "View Insights",
+      "short_name": "Insights",
+      "description": "Analyze your spending habits",
+      "url": "/index.html?action=insights",
+      "icons": [{"src": "https://lh3.googleusercontent.com/p/AF1QipP-RpnT30gXZ44AUYSaIW3EJRYYO29xFLca4H3m=s1360-w1360-h1020-rw", "sizes": "1360x1020"}]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+moneymage",
+      "url": "/index.html?route=%s"
+    }
+  ]
+}
